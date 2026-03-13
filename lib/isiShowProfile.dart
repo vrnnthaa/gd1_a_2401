@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
 
 import '../pubspec.yaml';
 
@@ -14,9 +13,6 @@ List urlList = [
   Image.asset('images/image1.JPG'),
   Image.asset('images/image2.JPG'),
   Image.asset('images/image3.JPG'),
-  Image.asset('images/image1.JPG'),
-  Image.asset('images/image2.JPG'),
-  Image.asset('images/image3.JPG'),
 ];
 
 class _IsiShowProfileState extends State<IsiShowProfile> {
@@ -26,7 +22,6 @@ class _IsiShowProfileState extends State<IsiShowProfile> {
       home: Scaffold(
         body: Column(
           children: [
-            // ── Carousel Horizontal ──
             Container(
               margin: const EdgeInsets.symmetric(vertical: 20),
               height: 200,
@@ -45,27 +40,6 @@ class _IsiShowProfileState extends State<IsiShowProfile> {
                         child: img,
                       ),
                   ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: GridView.builder(
-                  scrollDirection: Axis.vertical,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3, 
-                    crossAxisSpacing: 4, 
-                    mainAxisSpacing: 4, 
-                    childAspectRatio: 1.0, 
-                  ),
-                  itemCount: urlList.length,
-                  itemBuilder: (context, index) {
-                    return ClipRRect(
-                      borderRadius: BorderRadius.circular(6),
-                      child: urlList[index],
-                    );
-                  },
                 ),
               ),
             ),
