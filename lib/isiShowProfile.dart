@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
 
 import '../pubspec.yaml';
 
@@ -47,7 +48,6 @@ class _IsiShowProfileState extends State<IsiShowProfile> {
                 ),
               ),
             ),
-x
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
