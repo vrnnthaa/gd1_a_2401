@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const kColor = Color.fromARGB(255, 105, 169, 228);
 
-const String username = 'Verrent Natha Aurelia';
+const String username = 'Verrent Natha';
 
 const SizedBox kSizeBox2 = SizedBox(width: 20);
 
